@@ -33,19 +33,10 @@ export default function RouterComponenet() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/Campaignform">
-            <CampaignForm />
-          </Route>
-          <Route path="/Login">
-            <Login />
-          </Route>
-          <Route path="/Campaignform">
-            <CampaignForm />
-          </Route>
-
-          <Route path="/Viewdonation">
-            <Viewdonation />
-          </Route>
+          <Route path="/Campaignform" component={CampaignForm}> </Route>
+          <Route path="/Login" component={Login}></Route>
+          <Route path="/Campaignform" component={CampaignForm}></Route>
+          <Route path="/Viewdonation" component={Viewdonation}> </Route>
         </Switch>
       </div>
     </Router>
