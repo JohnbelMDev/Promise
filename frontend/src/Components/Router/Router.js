@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import CampaignForm from "../Campaignform/Campaignform";
 import Login from "../Login/Login";
+import Viewdonation from "../Viewdonation/Viewdonation";
 
 export default function RouterComponenet() {
   return (
@@ -23,6 +24,9 @@ export default function RouterComponenet() {
             <li>
               <Link to="/Login">Users</Link>
             </li>
+            <li>
+              <Link to="/Viewdonation">Users</Link>
+            </li>
           </ul>
         </nav>
 
@@ -37,6 +41,10 @@ export default function RouterComponenet() {
           </Route>
           <Route path="/Campaignform">
             <CampaignForm />
+          </Route>
+
+          <Route path="/Viewdonation">
+            <Viewdonation />
           </Route>
         </Switch>
       </div>
