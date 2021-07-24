@@ -8,6 +8,8 @@ import {
 import CampaignForm from "../Campaignform/Campaignform";
 import Login from "../Login/Login";
 import Viewdonation from "../Viewdonation/Viewdonation";
+import Stripe from "../Stripe/StripeContainer";
+
 
 export default function RouterComponenet() {
   return (
@@ -15,17 +17,10 @@ export default function RouterComponenet() {
       <div>
         <nav>
           <ul>
+           
+            
             <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/Campaignform">About</Link>
-            </li>
-            <li>
-              <Link to="/Login">Users</Link>
-            </li>
-            <li>
-              <Link to="/Viewdonation">Users</Link>
+              <Link to="/Stripe">Stripe</Link>
             </li>
           </ul>
         </nav>
@@ -33,10 +28,10 @@ export default function RouterComponenet() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/Campaignform" component={CampaignForm}> </Route>
-          <Route path="/Login" component={Login}></Route>
-          <Route path="/Campaignform" component={CampaignForm}></Route>
-          <Route path="/Viewdonation" component={Viewdonation}> </Route>
+        
+          <Route path="/Stripe" component={Stripe}> </Route>
+        
+
         </Switch>
       </div>
     </Router>

@@ -4,7 +4,7 @@ import { BrowserRouter as  Route } from 'react-router-dom';
 import Router from "./Components/Router/Router.js";
 import Login from "./Components/Login/Login.js";
 import CampaignForm from "./Components/Campaignform/Campaignform.js";
-
+import StripeContainers from "./Components/Stripe/StripeContainer.js";
 //  function CampaignList(){
 //    const campaigns = ["campaign1", "campaign2"];
 //    return(
@@ -18,8 +18,7 @@ import CampaignForm from "./Components/Campaignform/Campaignform.js";
 function App() {
   return(
     
-   <Router> </Router>
-
+<Router></Router>
   )
 }
 
